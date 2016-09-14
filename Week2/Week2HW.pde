@@ -15,7 +15,32 @@ int StartY = height/8;
 
   fill(#39B24E);
   rect(StartX-30,StartY-25, 60, 50); //head
-  rect(StartX-100,StartY+45, 200, 50); //UpperSide
+  
+  
+  //rect(StartX-100,StartY+45, 200, 50); //UpperSide
+  //Upperside updated
+  
+  rect(StartX-100,StartY+45, 64,30);
+  rect(StartX+35,StartY+45, 64,30);
+  
+  rect(StartX-25,StartY+55, 50,30);
+  beginShape(); 
+    vertex(StartX-35,StartY+45);    
+    vertex(StartX-25,StartY+55);
+    vertex(StartX-25,StartY+80); 
+    vertex(StartX-35,StartY+80);
+  endShape(CLOSE);
+  
+   beginShape(); 
+    vertex(StartX+35,StartY+45);    
+    vertex(StartX+25,StartY+55);
+    vertex(StartX+25,StartY+80); 
+    vertex(StartX+35,StartY+80);
+  endShape(CLOSE);
+  
+  
+  
+  
   
   beginShape(); //Right Leg
     vertex(StartX+45,StartY+205);
@@ -48,6 +73,12 @@ int StartY = height/8;
 
   beginShape();
     vertex(StartX-100,StartY+70);
+    
+    vertex(StartX-35,StartY+70);
+    vertex(StartX-25,StartY+80);
+    vertex(StartX+25,StartY+80);
+    vertex(StartX+35,StartY+70);
+    
     vertex(StartX+100,StartY+70);
       vertex(StartX+100,StartY+110);
     vertex(StartX+40,StartY+110);
@@ -108,14 +139,14 @@ rect(StartX-80, StartY+110, 10,120); //left arm
 
 rect(StartX+70, StartY+110, 10,120); //Right arm
 
-
+//Black Lines
 fill(0);
-rect(StartX-100,StartY+45, 10, 65);
+rect(StartX-100,StartY+45, 10, 65); //Left Side
 
-rect(StartX+90,StartY+45, 10, 65);
+rect(StartX+90,StartY+45, 10, 65); // Right Side
 
-rect(StartX-5,StartY-25, 10, 20);
+rect(StartX-5,StartY-25, 10, 20); //Head
 
-rect(StartX+20,StartY+460, 5, 40);
+rect(StartX+20,StartY+460, 5, 40); //Legs Right
 
-rect(StartX-25,StartY+460, 5, 40);
+rect(StartX-25,StartY+460, 5, 40); //Legs Left
