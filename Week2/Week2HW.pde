@@ -1,15 +1,33 @@
 //Processing week 2 homework
 //Robot
 float StartX = (width/2.0);
-int StartY = height/8;
+int StartY = height/3;
 
   size(600, 800);
   background(127,127,127); //Gray Background
   ellipseMode(RADIUS);
-  print(width/2);
-  print(StartY);
-  strokeWeight(2);
+  strokeWeight(0);
    
+
+//bg
+fill(#62E4E8);
+//ellipse(StartX+100, StartY+300, 300,300);
+
+ for (int y = 0; y<=height; y+=40) {
+    for (int x = 0; x<+width; x+=40){
+      rect(x, y, 20, 20);
+    }
+ }
+ 
+ for (int y = 20; y<=height; y+=40) {
+    for (int x = 20; x<+width; x+=40){
+      rect(x, y, 20, 20);
+    }
+ }
+strokeWeight(2);
+//hair
+fill(0);
+ellipse(StartX, StartY, 60,80);
 
 //BackSides
 
