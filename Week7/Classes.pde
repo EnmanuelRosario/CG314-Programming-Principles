@@ -1,5 +1,5 @@
 //HOW TO USE:
-// pancakes( imageFile, Image size, Falling Speed)
+// Pancakes( imageFile, Image size, Falling Speed);
 
 class Pancakes {
   float x;
