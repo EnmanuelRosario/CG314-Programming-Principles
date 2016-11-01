@@ -38,41 +38,16 @@ void draw() {
   if(time >1000) {
     time = 0;
     GraSpeed+=5;
-    print("Hey You");
+    
   }
+  
+  
 for (Granades a : granines) {
         a.update(GraSpeed, width,plX,plY);
-      }
+        GraSpeed = a.SpeedRun();
+        }
+      
 
-    //if (millis() > 200000) {           //End Game
-    //  for (Granades a : granines) {
-    //    a.update(200, width,plX, plY);
-    //  }
-    //} else if (millis() > 75000) {           //Final Level
-    //  for (Granades a : granines) {
-    //    a.update(20, width, plX,plY);
-    //  }
-    //} else if (millis() > 60000) {          //5th Level
-    //  for (Granades a : granines) {
-    //    a.update(12, width,plX, plY);
-    //  }
-    //} else if (millis() > 45000) {           //4th Level
-    //  for (Granades a : granines) {
-    //    a.update(10, width,plX,plY);
-    //  }
-    //} else if (millis() > 30000) {          //3rd Level
-    //  for (Granades a : granines) {
-    //    a.update(7, width,plX,plY);
-    //  }
-    //} else if (millis() > 15000) {          //2nd Level
-    //  for (Granades a : granines) {
-    //    a.update(5, width,plX,plY);
-    //  }
-    //} else {          //1st Level
-    //  for (Granades a : granines) {
-    //    a.update(2, width,plX,plY);
-    //  }
-    //}
   }
   character();
 }
@@ -106,4 +81,7 @@ void movement() {
       plX += pSpeed;
     }
   }
+  
+  if(mousePressed) pSpeed = 50;
+  else pSpeed = 8;
 } 
